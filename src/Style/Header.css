@@ -1,0 +1,58 @@
+.app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.header {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .app-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 0rem;
+    }
+
+    .logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .quiz {
+        display: none;
+    }
+}
